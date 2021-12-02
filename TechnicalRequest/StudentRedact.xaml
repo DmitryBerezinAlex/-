@@ -1,0 +1,28 @@
+﻿<Window x:Class="TechnicalRequest.StudentRedact"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TechnicalRequest"
+        mc:Ignorable="d"
+        Title="StudentRedact" Height="450" Width="776.8" Loaded="Window_Loaded">
+    <Grid>
+        <DataGrid x:Name="RedactGrid" AutoGenerateColumns="True" HorizontalAlignment="Left" Height="242" Margin="10,20,0,0" VerticalAlignment="Top" Width="474"/>
+        <Button x:Name="RedactButton" Content="Изменить" HorizontalAlignment="Left" Margin="489,10,0,0" VerticalAlignment="Top" Width="98" Height="30" Click="RedactButton_Click"/>
+        <TextBox HorizontalAlignment="Left" Name="LastNameBox" Height="33" Margin="492,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
+        <TextBox HorizontalAlignment="Left" Name="FirstNameBox" Height="33" Margin="492,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
+        <TextBox HorizontalAlignment="Left" Name="MiddleNameBox" Height="33" Margin="492,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
+        <TextBlock HorizontalAlignment="Left" Margin="652,115,0,0" TextWrapping="Wrap" Text="Фамилия*" VerticalAlignment="Top" Height="32" Width="67"/>
+        <TextBlock HorizontalAlignment="Left" Margin="652,168,0,0" TextWrapping="Wrap" Text="Имя*" VerticalAlignment="Top" Height="32" Width="67"/>
+        <TextBlock HorizontalAlignment="Left" Margin="651,230,-37.6,0" TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Top" Height="32" Width="157"/>
+        <TextBlock HorizontalAlignment="Left" Margin="652,293,0,0" TextWrapping="Wrap" Text="Класс*" VerticalAlignment="Top" Height="32" Width="67"/>
+        <Button Content="?" HorizontalAlignment="Left" Name="HelpButton" FontSize="20" Margin="725,10,0,0" VerticalAlignment="Top" Width="35" Height="25" Click="HelpButton_Click"/>
+        <TextBox HorizontalAlignment="Left" x:Name="IDBox" Height="33" Margin="492,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
+        <TextBlock HorizontalAlignment="Left" Margin="651,65,0,0" TextWrapping="Wrap" Text="ID*" VerticalAlignment="Top" Height="32" Width="67"/>
+        <ComboBox HorizontalAlignment="Left" Name="ClassBox" DisplayMemberPath="Name" Margin="526,293,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,4,0,0" TextWrapping="Wrap" Text="Ученики" VerticalAlignment="Top"/>
+        <DataGrid HorizontalAlignment="Left" Name="ClassGrid" Height="117" Margin="10,293,0,0" VerticalAlignment="Top" Width="189"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,277,0,0" TextWrapping="Wrap" Text="Классы" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
